@@ -22,13 +22,3 @@ def get_birthdays_per_week(users):
     for day, names in birth_week.items():
         if names:
             print(f"{day}: {', '.join(names)}")
-
-
-get_birthdays_per_week([
-        {"name": "Test Test", "birthday": datetime(1955, 2, 24)},
-        {"name": "Test1 Test1", "birthday": datetime(1955, 2, 25)},
-        {"name": "Test2 Test2", "birthday": datetime(1955, 2, 26)},
-        {"name": "Test3 Test3", "birthday": datetime(1955, 2, 27)},
-        {"name": "Test4 Test4", "birthday": datetime(1956, 2, 29)},
-        {"name": "Test5 Test5", "birthday": datetime(1955, 2, 28)},
-    ])
